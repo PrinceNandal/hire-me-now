@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Prince</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header>
+        <h1 class="text-2xl font-bold">Prince | Frontend Developer</h1>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="h-screen flex flex-col justify-center items-center text-center px-6">
+        <h2 class="text-4xl font-extrabold">Contact Me</h2>
+        <p class="text-lg mt-4 max-w-2xl">Feel free to reach out to me for any opportunities or collaborations.</p>
+        
+        <form action="https://formspree.io/f/mvgzqklr" method="POST" onsubmit="redirectThankYou(event)">
+            <label class="block text-left text-sm font-semibold mb-2">Name</label>
+            <input type="text" name="name" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600" placeholder="Your Name" required>
+            
+            <label class="block text-left text-sm font-semibold mt-4 mb-2">Email</label>
+            <input type="email" name="email" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600" placeholder="Your Email" required>
+            
+            <label class="block text-left text-sm font-semibold mt-4 mb-2">Message</label>
+            <textarea name="message" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600" rows="4" placeholder="Your Message" required></textarea>
+            
+            <button type="submit" class="mt-4 px-6 py-3 bg-blue-500 hover:bg-blue-700 rounded-full text-white text-lg font-semibold w-full">Let’s Talk</button>
+        </form>
+        
+        <p class="mt-6">Or contact me directly:</p>
+        <p class="text-lg font-semibold">Email: princenandal123@gmail.com</p>
+        <p class="text-lg font-semibold">Phone: +43 67762866750</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
