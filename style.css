@@ -5,7 +5,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    overflow-y: auto; /* Ensure the page is scrollable */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header Styling */
@@ -23,9 +23,11 @@ header {
 
 nav ul {
     list-style: none;
-    display: flex;
+    flex-direction: row;
     gap: 20px;
+    display: flex;
     transition: max-height 0.3s ease;
+    padding: 0;
 }
 
 nav ul.open {
@@ -73,8 +75,13 @@ nav a:hover {
 
 /* Sections Styling */
 section {
-    padding: 120px 20px; /* Adjusted padding to prevent header overlap */
+    padding: 100px 20px; /* Increased padding to prevent header overlap */
     text-align: center;
+}
+
+section > * {
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 /* Form Styling */
@@ -128,6 +135,7 @@ footer {
     }
 
     nav ul {
+        flex-direction: row;
         gap: 15px;
     }
 }
@@ -160,11 +168,11 @@ footer {
     }
 
     section {
-        padding: 90px 15px;
+        padding: 90px 15px; /* Adjusted for smaller devices */
     }
 
     form {
-        max-width: 100%;
+        max-width: 90%; /* Ensure form is responsive */
         padding: 15px;
     }
 
